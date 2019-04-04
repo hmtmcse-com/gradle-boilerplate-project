@@ -1,16 +1,17 @@
-# Gradle Boilerplate Project
+plugins {
+    id 'java'
+    id "org.ajoberstar.grgit" version "3.1.1"
+}
 
-### How to create Gradle Project with git Source Repository?
+group 'com.hmtmcse.tool'
+version '1.0'
 
-Here we will going to use grgit gradle plugin let's follow the Steps
+sourceCompatibility = 1.8
 
+repositories {
+    mavenCentral()
+}
 
-
-
-#### build.gradle
-Add below codes into **build.gradle**
-
-```
 // All Git repository List 
 def repositoryMap =  [
         "java-common" : "https://github.com/hmtmcse/java-common.git",
@@ -47,32 +48,3 @@ dependencies {
     
     testImplementation group: 'junit', name: 'junit', version: '4.12'
 }
-```
-
-
-<br><br>
-
-#### settings.gradle 
-Add below codes into **settings.gradle**
-
-```
-File configFile = file('ex-plugins/')
-if (configFile.exists()){
-    configFile.list().each {
-        include(it)
-        project(":${it}").projectDir = file("ex-plugins/${it}")
-    }
-}
-```
-
-
-
-
-
-
-
-
-<br><br><br><br>
-
-**Reference**
-1. Gradle grplugin: https://plugins.gradle.org/plugin/org.ajoberstar.grgit

@@ -1,0 +1,9 @@
+rootProject.name = 'GradleBoilerplateProject'
+
+File configFile = file('ex-plugins/')
+if (configFile.exists()){
+    configFile.list().each {
+        include(it)
+        project(":${it}").projectDir = file("ex-plugins/${it}")
+    }
+}
