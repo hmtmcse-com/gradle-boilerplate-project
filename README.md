@@ -6,11 +6,45 @@ Here we will going to use grgit gradle plugin let's follow the Steps
 
 
 
+<br><br><br><br>
+
+### settings.gradle 
+Add below codes into **settings.gradle**
+
+```
+File configFile = file('ex-plugins/')
+if (configFile.exists()){
+    configFile.list().each {
+        include(it)
+        project(":${it}").projectDir = file("ex-plugins/${it}")
+    }
+}
+```
+
+**[Full Source of settings.gradle](https://github.com/hmtmcse-com/gradle-boilerplate-project/blob/master/settings.gradle)**
+
+
+
+<br><br><br><br>
 
 ### build.gradle
 Add below codes into **build.gradle**
 
 ```
+plugins {
+    id 'java'
+    id "org.ajoberstar.grgit" version "3.1.1"
+}
+
+group 'com.hmtmcse.tool'
+version '1.0'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
 // All Git repository List 
 def repositoryMap =  [
         "java-common" : "https://github.com/hmtmcse/java-common.git",
@@ -50,20 +84,10 @@ dependencies {
 ```
 
 
-<br><br>
+**[Full Source of build.gradle](https://github.com/hmtmcse-com/gradle-boilerplate-project/blob/master/build.gradle)**
 
-### settings.gradle 
-Add below codes into **settings.gradle**
 
-```
-File configFile = file('ex-plugins/')
-if (configFile.exists()){
-    configFile.list().each {
-        include(it)
-        project(":${it}").projectDir = file("ex-plugins/${it}")
-    }
-}
-```
+
 
 
 
