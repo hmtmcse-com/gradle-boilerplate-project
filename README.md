@@ -1,2 +1,2 @@
-# gradle-boilerplate-project
+# Gradle Boilerplate Project
 Gradle Boilerplate Project
