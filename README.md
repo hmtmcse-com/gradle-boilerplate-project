@@ -6,7 +6,7 @@ Here we will going to use grgit gradle plugin let's follow the Steps
 
 
 
-<br><br><br><br>
+<br><br>
 
 ### settings.gradle 
 Add below codes into **settings.gradle**
