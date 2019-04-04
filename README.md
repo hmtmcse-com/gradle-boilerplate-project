@@ -12,9 +12,11 @@ Here we will going to use **grgit** gradle plugin let's follow the Steps
 Add below codes into **settings.gradle**
 
 ```
-File configFile = file('ex-plugins/')
-if (configFile.exists()){
-    configFile.list().each {
+rootProject.name = 'GradleBoilerplateProject'
+
+File exRepositories = file('ex-plugins/')
+if (exRepositories.exists()){
+    exRepositories.list().each {
         include(it)
         project(":${it}").projectDir = file("ex-plugins/${it}")
     }
