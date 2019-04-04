@@ -1,8 +1,8 @@
 # Gradle Boilerplate Project
 
-## How to create Gradle Project with git Source Repository?
+## How to create Gradle Project with git Source Dependency?
 
-Here we will going to use grgit gradle plugin let's follow the Steps
+Here we will going to use **grgit** gradle plugin let's follow the Steps
 
 
 
