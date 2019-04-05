@@ -74,7 +74,7 @@ task cloneRepositories {
 dependencies {
 
     // if external source repositories directory is available then add those as dependency
-    File exRepositories = file('ex-repositories/')
+    File exRepositories = file('ex-plugins/')
     if (exRepositories.exists()){
         exRepositories.list().each {
             implementation project(":${it}")
