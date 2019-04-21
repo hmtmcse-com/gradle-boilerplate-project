@@ -7,7 +7,7 @@ branch for see the specific implementations. you may use diff for find out chang
 
 1. **[master](https://github.com/hmtmcse-com/gradle-boilerplate-project/tree/master)** : Master Branch Consist with all branches Implementations
 2. **[git-source-dependency-clone](https://github.com/hmtmcse-com/gradle-boilerplate-project/tree/git-source-dependency-clone)** : How to clone git source using gradle?
-3. **[gradle-upgrade-4-to-5](#)**: How to upgrade gradle version 4 to version 5
+3. **[gradle-upgrade-4-to-5](https://github.com/hmtmcse-com/gradle-boilerplate-project/tree/gradle-upgrade-4-to-5)**: How to upgrade gradle version 4 to version 5
 4. **[java-jar-using-gradle](#)**: How do i make a executable /  library jar using gradle?
 
 
@@ -113,7 +113,7 @@ dependencies {
 
 <br><br><br>
 
-## How to Upgrade Gradle version 4 to Gradle Version 5? [YouTube Video Link](#)
+## How to Upgrade Gradle version 4 to Gradle Version 5? [YouTube Video Link](https://www.youtube.com/watch?v=UsxNGGgavPo)
 
 **Project Git Branch:**  gradle-upgrade-4-to-5
 
