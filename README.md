@@ -7,13 +7,13 @@ branch for see the specific implementations. you may use diff for find out chang
 
 1. **[master](https://github.com/hmtmcse-com/gradle-boilerplate-project/tree/master)** : Master Branch Consist with all branches Implementations
 2. **[git-source-dependency-clone](https://github.com/hmtmcse-com/gradle-boilerplate-project/tree/git-source-dependency-clone)** : How to clone git source using gradle?
-3. **gradle-upgrade-4-to-5**: How to upgrade gradle version 4 to version 5
-4. **java-jar-using-gradle**: How do i make a executable /  library jar using gradle?
+3. **[gradle-upgrade-4-to-5](#)**: How to upgrade gradle version 4 to version 5
+4. **[java-jar-using-gradle](#)**: How do i make a executable /  library jar using gradle?
 
 
 <br><br><br>
 
-## How to create Gradle Project with git Source Dependency? 
+## How to create Gradle Project with git Source Dependency? [YouTube Video Link](https://www.youtube.com/watch?v=Rv0Zm4L85PI)
 
 **Project Git Branch:**  git-source-dependency-clone
 
@@ -104,16 +104,37 @@ dependencies {
 **[Full Source of build.gradle](https://github.com/hmtmcse-com/gradle-boilerplate-project/blob/master/build.gradle)**
 
 
-
-
-
-
-
-
-
-
-
-<br><br><br><br>
+<br><br>
 
 **Reference**
 1. Gradle grplugin: https://plugins.gradle.org/plugin/org.ajoberstar.grgit
+
+
+
+<br><br><br>
+
+## How to Upgrade Gradle version 4 to Gradle Version 5? [YouTube Video Link](#)
+
+**Project Git Branch:**  gradle-upgrade-4-to-5
+
+Run the belong command from Gradle source, before run command please make sure, you have gradle wrapper on your project
+and also the **gradlew** (For unix system), **gradlew.bat** (For Windows System) Available. These commands will not run if you
+haven't Java home set.
+
+```
+gradle wrapper --gradle-version 5.0
+
+# For Windows and With Gradle Wrapper
+gradlew.bat wrapper --gradle-version 5.0
+
+
+# For Unix / Mac / Linux and With Gradle Wrapper
+gradlew.bat wrapper --gradle-version 5.0
+```
+
+
+<br><br>
+
+**Reference**
+1. **Gradle Upgrade**: https://docs.gradle.org/current/userguide/upgrading_version_4.html
+2. **Java Home Setup** https://www.youtube.com/watch?v=qEk8Q-N4Hz4
