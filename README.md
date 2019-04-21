@@ -11,7 +11,7 @@ branch for see the specific implementations. you may use diff for find out chang
 4. **java-jar-using-gradle**: How do i make a executable /  library jar using gradle?
 
 
-
+<br><br><br>
 
 ## How to create Gradle Project with git Source Dependency? 
 
