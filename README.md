@@ -6,7 +6,7 @@ This project based on multiple branch, each branch has specific Implementation, 
 branch for see the specific implementations. you may use diff for find out changes. :)
 
 1. **master** : Master Branch Consist with all branches Implementations
-2. **git-source-dependency-clone** : How to clone git source using gradle?
+2. **[git-source-dependency-clone](https://github.com/hmtmcse-com/gradle-boilerplate-project/tree/git-source-dependency-clone)** : How to clone git source using gradle?
 3. **gradle-upgrade-4-to-5**: How to upgrade gradle version 4 to version 5
 4. **java-jar-using-gradle**: How do i make a executable /  library jar using gradle?
 
