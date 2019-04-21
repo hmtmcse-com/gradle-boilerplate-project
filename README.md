@@ -1,6 +1,21 @@
 # Gradle Boilerplate Project
 
-## How to create Gradle Project with git Source Dependency?
+## Project Branches
+
+This project based on multiple branch, each branch has specific Implementation, so if you want then you can switch 
+branch for see the specific implementations. you may use diff for find out changes. :)
+
+1. **master** : Master Branch Consist with all branches Implementations
+2. **git-source-dependency-clone** : How to clone git source using gradle?
+3. **gradle-upgrade-4-to-5**: How to upgrade gradle version 4 to version 5
+4. **java-jar-using-gradle**: How do i make a executable /  library jar using gradle?
+
+
+
+
+## How to create Gradle Project with git Source Dependency? 
+
+**Project Git Branch:**  git-source-dependency-clone
 
 Here we will going to use **grgit** gradle plugin let's follow the Steps
 
