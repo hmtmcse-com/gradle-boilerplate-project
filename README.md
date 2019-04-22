@@ -165,7 +165,7 @@ jar {
                 "Main-Class": "com.hmtmcse.tool.Bismillah"
         )
     }
-    destinationDir = file("$rootDir/my-jar")
+    destinationDirectory = file("$rootDir/my-jar")
     archivesBaseName = 'app'
 }
 ```
