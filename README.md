@@ -184,5 +184,5 @@ jar {
 
 **Reference**
 1. **Java Manifest Documentations :** https://docs.oracle.com/javase/tutorial/deployment/jar/manifestindex.html
-2. **Gradle Jar properties :** https://docs.gradle.org/current/dsl/org.gradle.api.tasks.bundling.Jar.html#org.gradle.api.tasks.bundling.Jar:baseName
+2. **Gradle Jar properties :** https://docs.gradle.org/current/dsl/org.gradle.api.tasks.bundling.Jar.html
 3. **Gradle Build Java Libraries :** https://guides.gradle.org/building-java-libraries/
