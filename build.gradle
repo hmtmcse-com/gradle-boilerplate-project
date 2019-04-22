@@ -12,6 +12,22 @@ repositories {
     mavenCentral()
 }
 
+
+jar {
+    from {
+        configurations.runtimeClasspath.collect { it.isDirectory() ? it : zipTree(it) }
+    }
+    manifest {
+        attributes(
+                'Implementation-Title': 'Jar Making Exaple',
+                "Main-Class": "com.hmtmcse.tool.Bismillah"
+        )
+    }
+    destinationDirectory = file("$rootDir/my-jar")
+    archivesBaseName = 'app'
+}
+
+
 // All Git repository List 
 def repositoryMap =  [
         "java-common" : "https://github.com/hmtmcse/java-common.git",
