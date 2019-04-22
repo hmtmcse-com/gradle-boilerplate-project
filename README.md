@@ -175,7 +175,7 @@ jar {
 **Here** 
 1. **form :** This Closure telling gradle to what's are need to include into .jar file. It will include all dependency
 2. **manifest :** Meta Description of a jar file.
-3. **destinationDir :** output directory
+3. **destinationDirectory :** output directory
 4. **archivesBaseName :** jar name
 
 
