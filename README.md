@@ -143,3 +143,46 @@ gradlew.bat wrapper --gradle-version 5.0
 **Reference**
 1. **Gradle Upgrade**: https://docs.gradle.org/current/userguide/upgrading_version_4.html
 2. **Java Home Setup** https://www.youtube.com/watch?v=qEk8Q-N4Hz4
+
+
+
+<br><br><br>
+
+## How to Create Jar file using Gradle? [YouTube Video Link](https://www.youtube.com/watch?v=UsxNGGgavPo)
+
+**Project Git Branch:**  java-jar-using-gradle
+
+Please add the below codes into your **build.gradle** file 
+
+```
+jar {
+    from {
+        configurations.runtimeClasspath.collect { it.isDirectory() ? it : zipTree(it) }
+    }
+    manifest {
+        attributes(
+                'Implementation-Title': 'Jar Making Exaple',
+                "Main-Class": "com.hmtmcse.tool.Bismillah"
+        )
+    }
+    destinationDir = file("$rootDir/my-jar")
+    archivesBaseName = 'app'
+}
+```
+
+<br><br>
+
+**Here** 
+1. **form :** This Closure telling gradle to what's are need to include into .jar file. It will include all dependency
+2. **manifest :** Meta Description of a jar file.
+3. **destinationDir :** output directory
+4. **archivesBaseName :** jar name
+
+
+
+<br><br>
+
+**Reference**
+1. **Java Manifest Documentations :** https://docs.oracle.com/javase/tutorial/deployment/jar/manifestindex.html
+2. **Gradle Jar properties :** https://docs.gradle.org/current/dsl/org.gradle.api.tasks.bundling.Jar.html#org.gradle.api.tasks.bundling.Jar:baseName
+3. **Gradle Build Java Libraries :** https://guides.gradle.org/building-java-libraries/
