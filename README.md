@@ -134,7 +134,8 @@ gradlew.bat wrapper --gradle-version 5.0
 
 <br><br>
 
-**Here** --gradle-version xx could be anything. for instance --gradle-version 7.0
+**Here** 
+1. **--gradle-version xx** could be anything. for instance --gradle-version 7.0
 
 
 <br><br>
